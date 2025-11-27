@@ -1,40 +1,69 @@
-// 1
+//1
+// const obj = Number(prompt());
 
-// function checkAge(age) {
-//    const allow = age >= 18 ? "совершеннолетний" : "несовершеннолетний";
-//    return console.log(allow);
-// }
-
-// checkAge(44);
+// let result = obj > 0 ? true : false;
+// console.log(result)
 
 //2
+// let obj = prompt();
 
-// const min = (a, b) => {
-//   if (a < b) {
-//     console.log(a);
-//     return a;
-//   } else {
-//     console.log(b);
-//     return b;
-//   }
-// }
-
-// min(10, 2);
+// let result = obj == "test" ? true : false;
+// console.log(result);
 
 //3
-// function showOk() {
-//   console.log("ви погодились");
+// let obj = Number(prompt());
+
+// let result = obj > 10 ? obj - 5 : obj + 5;
+// console.log(result)
+
+//4
+
+// const month = Number(prompt());
+
+// switch (month) {
+//    case 1:
+//       console.log("Січень");
+//       break;
+//    case 2:
+//       console.log("Лютий");
+//       break;
+//    case 3:
+//       console.log("Березень");
+//       break;
+//    case 4:
+//       console.log("Квітень");
+//       break;
+//    case 5:
+//       console.log("Травень");
+//       break;
+//    case 6:
+//       console.log("Червень");
+//       break;
+//    case 7:
+//       console.log("Липень");
+//       break;
+//    case 8:
+//       console.log("Серпень");
+//       break;
+//    case 9:
+//       console.log("Вересень");
+//       break;
+//    case 10:
+//       console.log("Жовтень");
+//       break;
+//    case 11:
+//       console.log("Листопад");
+//       break;
+//    case 12:
+//       console.log("Грудень");
+//       break;
+//    default:
+//       month = console.log(`${month}-го місяця не існує`);
+
 // }
 
-// function showCancel() {
-//   console.log("ви непогодились");
-// }
+//5
+// const obj = prompt("Введіть число");
 
-// const ask = (question, yes, no) => {
-//   if (confirm(question)) {
-//     yes();
-//   } else {
-//     no();
-//   }
-// };
-// ask("Ви погоджуєтесь?", showOk, showCancel);
+// const sum = Number(obj[0]) + Number(obj[1]) + Number(obj[2]);
+// console.log(sum);
