@@ -1,69 +1,58 @@
-//1
-// const obj = Number(prompt());
-
-// let result = obj > 0 ? true : false;
-// console.log(result)
-
 //2
-// let obj = prompt();
 
-// let result = obj == "test" ? true : false;
-// console.log(result);
+// const laungueg = {
+//   showItems() {
+//     console.log("this is", this.items);
+//   },
+// };
 
-//3
-// let obj = Number(prompt());
+// const css = {
+//   items: ["css"],
+// };
 
-// let result = obj > 10 ? obj - 5 : obj + 5;
-// console.log(result)
+// const html = {
+//   items: ["html"],
+// };
 
-//4
+// laungueg.showItems.bind(html)();
+// laungueg.showItems.bind(css)();
 
-// const month = Number(prompt());
+// document
+//   .querySelector("#css")
+//   .addEventListener("click", laungueg.showItems.bind(css));
 
-// switch (month) {
-//    case 1:
-//       console.log("Січень");
-//       break;
-//    case 2:
-//       console.log("Лютий");
-//       break;
-//    case 3:
-//       console.log("Березень");
-//       break;
-//    case 4:
-//       console.log("Квітень");
-//       break;
-//    case 5:
-//       console.log("Травень");
-//       break;
-//    case 6:
-//       console.log("Червень");
-//       break;
-//    case 7:
-//       console.log("Липень");
-//       break;
-//    case 8:
-//       console.log("Серпень");
-//       break;
-//    case 9:
-//       console.log("Вересень");
-//       break;
-//    case 10:
-//       console.log("Жовтень");
-//       break;
-//    case 11:
-//       console.log("Листопад");
-//       break;
-//    case 12:
-//       console.log("Грудень");
-//       break;
-//    default:
-//       month = console.log(`${month}-го місяця не існує`);
+// document
+//   .querySelector("#html")
+//   .addEventListener("click", laungueg.showItems.bind(html));
 
-// }
+//1
 
-//5
-// const obj = prompt("Введіть число");
+// //3
 
-// const sum = Number(obj[0]) + Number(obj[1]) + Number(obj[2]);
-// console.log(sum);
+// const ShopItem = {
+//    name: "banana",
+//    price: 30,
+//    number: 4.5,
+//    showInfo: function () {
+//       console.group("Shop");
+//       console.log("item: " + this.name);
+//       console.log("price: " + this.price)
+//       console.log("amount: " + this.number)
+//    },
+// };
+
+// const ShopItem2 = {
+//   name: "cherry",
+//   price: 58,
+//   number: 1.3,
+// };
+
+// const ShopItem3 = {
+//   name: "jrange",
+//   price: 89,
+//   number: 3.4,
+// };
+
+// ShopItem.showInfo();
+// ShopItem.showInfo.apply(ShopItem2);
+// ShopItem.showInfo.apply(ShopItem3);
