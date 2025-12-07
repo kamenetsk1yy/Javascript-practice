@@ -1,0 +1,23 @@
+.main-text {
+   font-size: 64px;
+   text-align: center;
+}
+
+.inputs {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
+
+input {
+   border-radius: 20px;
+   border: 1px solid ;
+   padding: 10px 35px;
+   background: darkslategray;
+   transition: border 0.25s, background 0.25s;
+}
+
+
+   input:hover {
+      background: #008cff;
+   }

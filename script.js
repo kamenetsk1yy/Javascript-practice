@@ -1,58 +1,34 @@
-//2
+class Abonent {
+   constructor(bar) {
+      this.name = bar.name;
+      this.phone = bar.phone;
+   }
 
-// const laungueg = {
-//   showItems() {
-//     console.log("this is", this.items);
-//   },
-// };
+   firstName = "";
+   lastName = "";
+   Phone = "";
 
-// const css = {
-//   items: ["css"],
-// };
+   set name(newName) {
+      const nameRow = newName.split(" ");
+      this.firstName = nameRow[0];
+      this.lastName = nameRow[1];
+   }
+   set phone(value) {
+      const phoneRow = value;
+      this.Phone = phoneRow;
+   }
 
-// const html = {
-//   items: ["html"],
-// };
+   get name() {
+      return this.firstName, this.lastName;
+   }
+   get phone() {
+      return this.phone;
+   }
+}
 
-// laungueg.showItems.bind(html)();
-// laungueg.showItems.bind(css)();
+const Zhenia = new Abonent({
+   name: "Evgeniy Kamenetskiy",
+   phone: "0976223258",
+});
 
-// document
-//   .querySelector("#css")
-//   .addEventListener("click", laungueg.showItems.bind(css));
-
-// document
-//   .querySelector("#html")
-//   .addEventListener("click", laungueg.showItems.bind(html));
-
-//1
-
-// //3
-
-// const ShopItem = {
-//    name: "banana",
-//    price: 30,
-//    number: 4.5,
-//    showInfo: function () {
-//       console.group("Shop");
-//       console.log("item: " + this.name);
-//       console.log("price: " + this.price)
-//       console.log("amount: " + this.number)
-//    },
-// };
-
-// const ShopItem2 = {
-//   name: "cherry",
-//   price: 58,
-//   number: 1.3,
-// };
-
-// const ShopItem3 = {
-//   name: "jrange",
-//   price: 89,
-//   number: 3.4,
-// };
-
-// ShopItem.showInfo();
-// ShopItem.showInfo.apply(ShopItem2);
-// ShopItem.showInfo.apply(ShopItem3);
+console.log(Zhenia);
