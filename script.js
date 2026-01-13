@@ -1,34 +1,30 @@
-class Abonent {
-   constructor(bar) {
-      this.name = bar.name;
-      this.phone = bar.phone;
-   }
+// 1
 
-   firstName = "";
-   lastName = "";
-   Phone = "";
+const btn = document.getElementById("btn1");
+const text = document.getElementById("text");
 
-   set name(newName) {
-      const nameRow = newName.split(" ");
-      this.firstName = nameRow[0];
-      this.lastName = nameRow[1];
-   }
-   set phone(value) {
-      const phoneRow = value;
-      this.Phone = phoneRow;
-   }
-
-   get name() {
-      return this.firstName, this.lastName;
-   }
-   get phone() {
-      return this.phone;
-   }
+if (btn && text) {
+  btn.addEventListener("click", () => {
+    text.style.display = "none";
+  });
 }
 
-const Zhenia = new Abonent({
-   name: "Evgeniy Kamenetskiy",
-   phone: "0976223258",
-});
+const btn2 = document.getElementById("btn2");
+if (btn2 && text) {
+  btn2.addEventListener("click", () => {
+    text.style.display = "";
+  });
+}
 
-console.log(Zhenia);
+
+//2
+const nav = document.getElementById("nav");
+const nav1 = document.getElementById("nav1");
+
+nav.addEventListener("click", handleclick);
+nav1.addEventListener("click", handleclick);
+
+function handleclick(event) {
+   console.log(event.target);
+   event.target.classList.add("display-none");
+}

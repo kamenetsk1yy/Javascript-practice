@@ -21,3 +21,25 @@ input {
    input:hover {
       background: #008cff;
    }
+
+.btnitem {
+   padding: 80px;
+   margin: 5px;
+   display: inline;
+   flex-direction: column;
+   background: lightcyan;
+   border-radius: 15px;
+}
+
+.btnitem:hover {
+   background: lightblue;
+   transition: background 0.5s ;
+}
+
+.p2 {
+   margin-top: 140px;
+}
+
+.display-none {
+   display: none;
+}
